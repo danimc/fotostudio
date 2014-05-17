@@ -43,7 +43,7 @@ namespace FotoStudio
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(153, 26);
+			this.label1.Location = new System.Drawing.Point(136, 26);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(275, 36);
 			this.label1.TabIndex = 0;
@@ -68,7 +68,6 @@ namespace FotoStudio
 			this.btnalmacen.TabIndex = 2;
 			this.btnalmacen.Text = "Almacen de Fotos";
 			this.btnalmacen.UseVisualStyleBackColor = true;
-			
 			// 
 			// btntrabajos
 			// 
@@ -90,7 +89,7 @@ namespace FotoStudio
 			// 
 			// btnconfig
 			// 
-			this.btnconfig.Location = new System.Drawing.Point(358, 285);
+			this.btnconfig.Location = new System.Drawing.Point(358, 286);
 			this.btnconfig.Name = "btnconfig";
 			this.btnconfig.Size = new System.Drawing.Size(166, 49);
 			this.btnconfig.TabIndex = 5;

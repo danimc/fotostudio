@@ -40,10 +40,10 @@ namespace FotoStudio
 				menu.Show();
 				this.Hide();
 				
-			} if(usuario == "diseño" && contraseña == "1234"){
+			} else if (usuario == "diseño" && contraseña == "1234"){
 				menudesing men = new menudesing();
 				men.Show();
-				men.Hide();
+				this.Hide();
 			}
 				else{
 				MessageBox.Show("Usuario o contraseña incorrectas");
