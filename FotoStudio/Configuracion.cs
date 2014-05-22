@@ -29,5 +29,12 @@ namespace FotoStudio
 		{
 			this.Hide();
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			usuarios user = new usuarios();
+			user.Show();
+			this.Hide();
+		}
 	}
 }

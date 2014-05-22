@@ -42,7 +42,7 @@ namespace FotoStudio
 			// 
 			// btninsumos
 			// 
-			this.btninsumos.Location = new System.Drawing.Point(42, 129);
+			this.btninsumos.Location = new System.Drawing.Point(185, 121);
 			this.btninsumos.Name = "btninsumos";
 			this.btninsumos.Size = new System.Drawing.Size(133, 38);
 			this.btninsumos.TabIndex = 0;
@@ -52,6 +52,9 @@ namespace FotoStudio
 			// comboBox1
 			// 
 			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Items.AddRange(new object[] {
+									"Administrador\t",
+									"Diseñador"});
 			this.comboBox1.Location = new System.Drawing.Point(148, 75);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(209, 21);
@@ -76,12 +79,13 @@ namespace FotoStudio
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(42, 189);
+			this.button1.Location = new System.Drawing.Point(185, 207);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(133, 38);
 			this.button1.TabIndex = 4;
 			this.button1.Text = "Usuarios";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// label3
 			// 

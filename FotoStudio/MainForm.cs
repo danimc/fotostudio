@@ -60,6 +60,7 @@ namespace FotoStudio
 		{
 			Servicios serv = new Servicios();
 			serv.Show();
+			
 		}
 		
 		void MenuStrip1ItemClicked(object sender, ToolStripItemClickedEventArgs e)

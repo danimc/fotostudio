@@ -3,6 +3,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace FotoStudio
 {
@@ -30,24 +31,29 @@ namespace FotoStudio
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			string usuario, contraseña;
+			MySqlConnection con;
+			MySqlCommand comando;
+			MySqlDataReader read;
+			
+			string usuario, contrasena;
 			usuario = user.Text;
-			contraseña = password.Text;
+			contrasena = password.Text;
 			
+			con = new MySqlConnection("Server=localhost; Database=fotostudio; User ID=root; Password=123");
+			con.Open();
+			comando = new MySqlCommand("SELECT nombre,contrasena FROM usuarios WHERE (nombre ='" + usuario + "' AND contrasena='" + contrasena +"')", con);
+			read = comando.ExecuteReader();
 			
-			if(usuario == "administrador" && contraseña == "123"){
-				MainForm menu = new MainForm();
-				menu.Show();
+			if (read.Read()){
+				MainForm main = new MainForm();
+				main.Show();
 				this.Hide();
-				
-			} if(usuario == "diseño" && contraseña == "1234"){
-				menudesing men = new menudesing();
-				men.Show();
-				men.Hide();
 			}
-				else{
-				MessageBox.Show("Usuario o contraseña incorrectas");
+			else {
+				MessageBox.Show("Usuario o Contraseña Erronea");
 			}
+			
+			
 		}
 	}
 }
