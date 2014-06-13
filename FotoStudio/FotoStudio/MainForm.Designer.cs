@@ -40,13 +40,13 @@ namespace FotoStudio
 			this.label1 = new System.Windows.Forms.Label();
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnservicios = new System.Windows.Forms.Button();
+			this.btnsalida = new System.Windows.Forms.Button();
+			this.btncliente = new System.Windows.Forms.Button();
+			this.btnconfiguracion = new System.Windows.Forms.Button();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -83,47 +83,64 @@ namespace FotoStudio
 			this.menuStrip1.Text = "menuStrip1";
 			this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip1ItemClicked);
 			// 
-			// button1
+			// toolStripMenuItem1
 			// 
-			this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-			this.button1.Location = new System.Drawing.Point(13, 58);
-			this.button1.Margin = new System.Windows.Forms.Padding(1);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(226, 55);
-			this.button1.TabIndex = 4;
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.Button1Click);
+			this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.salirToolStripMenuItem});
+			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(60, 22);
+			this.toolStripMenuItem1.Text = "Archivo";
 			// 
-			// button2
+			// salirToolStripMenuItem
 			// 
-			this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-			this.button2.Location = new System.Drawing.Point(10, 289);
-			this.button2.Margin = new System.Windows.Forms.Padding(1);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(226, 58);
-			this.button2.TabIndex = 5;
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.Button2Click);
+			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+			this.salirToolStripMenuItem.Text = "Salir";
+			this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItemClick);
 			// 
-			// button3
+			// btnservicios
 			// 
-			this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-			this.button3.Location = new System.Drawing.Point(10, 136);
-			this.button3.Margin = new System.Windows.Forms.Padding(1);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(226, 56);
-			this.button3.TabIndex = 6;
-			this.button3.UseVisualStyleBackColor = true;
+			this.btnservicios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnservicios.BackgroundImage")));
+			this.btnservicios.Location = new System.Drawing.Point(13, 58);
+			this.btnservicios.Margin = new System.Windows.Forms.Padding(1);
+			this.btnservicios.Name = "btnservicios";
+			this.btnservicios.Size = new System.Drawing.Size(226, 60);
+			this.btnservicios.TabIndex = 4;
+			this.btnservicios.UseVisualStyleBackColor = true;
+			this.btnservicios.Click += new System.EventHandler(this.Button1Click);
 			// 
-			// button4
+			// btnsalida
 			// 
-			this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-			this.button4.Location = new System.Drawing.Point(10, 212);
-			this.button4.Margin = new System.Windows.Forms.Padding(1);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(226, 55);
-			this.button4.TabIndex = 7;
-			this.button4.UseVisualStyleBackColor = true;
+			this.btnsalida.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsalida.BackgroundImage")));
+			this.btnsalida.Location = new System.Drawing.Point(10, 289);
+			this.btnsalida.Margin = new System.Windows.Forms.Padding(1);
+			this.btnsalida.Name = "btnsalida";
+			this.btnsalida.Size = new System.Drawing.Size(226, 58);
+			this.btnsalida.TabIndex = 5;
+			this.btnsalida.UseVisualStyleBackColor = true;
+			this.btnsalida.Click += new System.EventHandler(this.Button2Click);
+			// 
+			// btncliente
+			// 
+			this.btncliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncliente.BackgroundImage")));
+			this.btncliente.Location = new System.Drawing.Point(10, 136);
+			this.btncliente.Margin = new System.Windows.Forms.Padding(1);
+			this.btncliente.Name = "btncliente";
+			this.btncliente.Size = new System.Drawing.Size(226, 59);
+			this.btncliente.TabIndex = 6;
+			this.btncliente.UseVisualStyleBackColor = true;
+			this.btncliente.Click += new System.EventHandler(this.Button3Click);
+			// 
+			// btnconfiguracion
+			// 
+			this.btnconfiguracion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnconfiguracion.BackgroundImage")));
+			this.btnconfiguracion.Location = new System.Drawing.Point(10, 212);
+			this.btnconfiguracion.Margin = new System.Windows.Forms.Padding(1);
+			this.btnconfiguracion.Name = "btnconfiguracion";
+			this.btnconfiguracion.Size = new System.Drawing.Size(226, 57);
+			this.btnconfiguracion.TabIndex = 7;
+			this.btnconfiguracion.UseVisualStyleBackColor = true;
+			this.btnconfiguracion.Click += new System.EventHandler(this.BtnconfiguracionClick);
 			// 
 			// pictureBox1
 			// 
@@ -135,21 +152,6 @@ namespace FotoStudio
 			this.pictureBox1.TabIndex = 8;
 			this.pictureBox1.TabStop = false;
 			// 
-			// salirToolStripMenuItem
-			// 
-			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-			this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-			this.salirToolStripMenuItem.Text = "Salir";
-			this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItemClick);
-			// 
-			// toolStripMenuItem1
-			// 
-			this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.salirToolStripMenuItem});
-			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(60, 22);
-			this.toolStripMenuItem1.Text = "Archivo";
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -157,10 +159,10 @@ namespace FotoStudio
 			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.ClientSize = new System.Drawing.Size(648, 385);
 			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.btnconfiguracion);
+			this.Controls.Add(this.btncliente);
+			this.Controls.Add(this.btnsalida);
+			this.Controls.Add(this.btnservicios);
 			this.Controls.Add(this.dateTimePicker1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.menuStrip1);
@@ -181,10 +183,10 @@ namespace FotoStudio
 		private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btnconfiguracion;
+		private System.Windows.Forms.Button btncliente;
+		private System.Windows.Forms.Button btnsalida;
+		private System.Windows.Forms.Button btnservicios;
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
 		private System.Windows.Forms.Label label1;

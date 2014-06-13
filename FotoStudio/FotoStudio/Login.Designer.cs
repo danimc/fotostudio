@@ -35,7 +35,7 @@ namespace FotoStudio
 			this.label3 = new System.Windows.Forms.Label();
 			this.user = new System.Windows.Forms.TextBox();
 			this.password = new System.Windows.Forms.MaskedTextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.btnlogin = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -80,24 +80,24 @@ namespace FotoStudio
 			this.password.Size = new System.Drawing.Size(174, 20);
 			this.password.TabIndex = 4;
 			// 
-			// button1
+			// btnlogin
 			// 
-			this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(137, 135);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 25);
-			this.button1.TabIndex = 5;
-			this.button1.Text = "Ingresar";
-			this.button1.UseVisualStyleBackColor = false;
-			this.button1.Click += new System.EventHandler(this.Button1Click);
+			this.btnlogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnlogin.Location = new System.Drawing.Point(137, 130);
+			this.btnlogin.Name = "btnlogin";
+			this.btnlogin.Size = new System.Drawing.Size(75, 25);
+			this.btnlogin.TabIndex = 5;
+			this.btnlogin.Text = "Ingresar";
+			this.btnlogin.UseVisualStyleBackColor = false;
+			this.btnlogin.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.ClientSize = new System.Drawing.Size(328, 172);
-			this.Controls.Add(this.button1);
+			this.ClientSize = new System.Drawing.Size(328, 164);
+			this.Controls.Add(this.btnlogin);
 			this.Controls.Add(this.password);
 			this.Controls.Add(this.user);
 			this.Controls.Add(this.label3);
@@ -111,7 +111,7 @@ namespace FotoStudio
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btnlogin;
 		private System.Windows.Forms.MaskedTextBox password;
 		private System.Windows.Forms.TextBox user;
 		private System.Windows.Forms.Label label3;

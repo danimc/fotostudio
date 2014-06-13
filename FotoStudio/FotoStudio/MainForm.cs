@@ -47,7 +47,8 @@ namespace FotoStudio
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			
+			BandejaSalida ban = new BandejaSalida();
+			ban.Show();
 		}
 		
 		void ToolTip1Popup(object sender, PopupEventArgs e)
@@ -59,6 +60,7 @@ namespace FotoStudio
 		{
 			Servicios serv = new Servicios();
 			serv.Show();
+			
 		}
 		
 		void MenuStrip1ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -69,6 +71,18 @@ namespace FotoStudio
 		void MainFormLoad(object sender, EventArgs e)
 		{
 			
+		}
+		
+		void Button3Click(object sender, EventArgs e)
+		{
+			Clientes cl = new Clientes();
+			cl.Show();
+		}
+		
+		void BtnconfiguracionClick(object sender, EventArgs e)
+		{
+			Configuracion con = new Configuracion();
+			con.Show();
 		}
 	}
 }
